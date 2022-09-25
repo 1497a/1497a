@@ -15,17 +15,21 @@ name:
 lt = "<", gt=">"
 <strong>tô đậm</strong>  tô đậm chữ
 <i>in nghiêng</i>
-<u>gạch chân</u>
-<s>gạch ngang</s>
+<u>gạch chân</u> ==<ins></ins>
+<s>gạch ngang</s> =<del></del>
 <em>nhấn mạnh </em>
 <code>: Định dạng cho một đoạn mã nào đó.
 <hr> Thước kẻ ngang trên tài liệu.
+<pre></pre> xuất paragraph y chang nhưng gì mình ghi
 <mark>tô màu</mark>
+<abbr title="World Health Organization">WHO</abbr> 
+<abbr title="World Health Organization">WHO</abbr>  viết ngược 
 Cấu trúc viết thuộc tính sẽ là <tên thẻ style="tên thuộc tính: giá trị">.
 span chỉ thay thế cho h,p,...
 <span style="font-size: 32px">Chữ có kích thước 32px</span> kích thước chữ
 <span style="font-family: Arial;">Font chữ Arial</span> font chữ
 <span style="text-align: center;">Canh giữa văn bản</span> căn lề 
+<
 -->
 <!DOCTYPE html>
 <html>
@@ -38,6 +42,27 @@ span chỉ thay thế cho h,p,...
     <meta name="description" content="Code ví dụ cho code" />
     <meta name="keyword" content="Phuoc,10d,khongsaoluu" />
     <!--charset có nhiệm vụ khai báo cho trình duyệt biết bảng mã ký tự siêu văn bản bên trong tài liệu là gì-->
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        h1 {
+            color: black;
+        }
+        
+        p {
+            color: black;
+            border: 2px solid palevioletred;
+            margin: 50px;
+        }
+    </style>
+    <!-- border: 2px solid color; tạo viền xung quanh chữ
+    margin: 50px; khoảng cách giữa các viền
+    -->
+    <!--Chúng ta có thể sử dụng file css để gộp chung các loại style mà ta đã tạo 
+    <link rel="stylesheet" href="style.css"> câu lệnh sẽ trỏ tới đường link style.css để lấy thông tin
+-->
 </head>
 
 <body>
@@ -47,10 +72,16 @@ span chỉ thay thế cho h,p,...
     <p1><mark>Đây sẽ là</mark> nơi mà mình test các viết của mình</p1>
     <p style="font-family: Arial;"> thay đổi font chữ</p>
     <p>
-        <sa style="color: rgb(251, 255, 0); background-color: black">Đây là một văn bản có thuộc tính style</sa>. Nếu bạn muốn dùng nhiều style trong một đoạn văn thì có thể sử dụng thẻ <code>&lt;span&gt;</code> để thêm <span style="color: blue">nhiều style</span> khác nhau.
+        <sa style="color: rgb(251, 255, 0); background-color: black; border : 5px solid red;">
+            Đây là một văn bản có thuộc tính style</sa>. Nếu bạn muốn dùng nhiều style trong một đoạn văn thì có thể sử dụng thẻ <code>&lt;span&gt;</code> để thêm <span style="color: blue">nhiều style</span> khác nhau.
     </p>
     <!--có thể thay đổi màu chữ nhờ thuộc tính style mà ko cần tới css-->
-</body>
+    <pre style="font-size: 32px ;">
+        Là vậy 
+        hay 
 
+        ko vậy
+    </pre>
+</body>
 
 </html>

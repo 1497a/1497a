@@ -1,0 +1,52 @@
+<!--
+Ordered List: <ol> </ol> thẻ con: <li> </li>
+Là kiểu hiển thị một danh sách mà các mục con của nó được sắp xếp theo thứ tự bằng số hoặc chữ cái.
+Unordered List: <ul> </ul> thẻ con: <li> </li>
+Là kiểu hiển thị danh sách mà các mục con của nó sẽ không được sắp xếp theo thứ tự mà chỉ được đánh dấu bằng một ký tự đặc trưng.
+Description List: <dl> </dl> thẻ con: <dt> </dt> <dd> </dd>.
+Là kiểu hiển thị danh sách mà các mục con của nó sẽ không được đánh dấu thứ tự, nhưng sẽ có kèm theo một đoạn miêu tả.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Học Web2 </title>
+</head>
+
+<body>
+    <p>Đang làm gì nữa</p>
+    <!--ordered list-->
+    <ol type="A">
+        <!--có thể thay thế giá trị của type= i,1,a,I-->
+        <li>Mục con 1</li>
+        <li>Mục con 2</li>
+        <li>Mục con 3</li>
+        <li>Mục con 4</li>
+        <li>Mục con 5</li>
+    </ol>
+    <!--unordered list-->
+    <ul>
+        <li>Đây là một danh sách không có thứ tự </li>
+        <li>Có nghĩa là nó không có đánh số như trên</li>
+        <li>Chứ không phải là set như python</li>
+    </ul>
+    <!-- description list-->
+    <dl>
+        <dt>cái này là con này</dt>
+        <dd>cái này là con của con</dd>
+        <dd>cái này thụt dòng này </dd>
+    </dl>
+    <!--Hoặc ta có thể xếp chồng như này -->
+    <ul>
+        <li>Lý do nên học it:
+            <ol>
+                <li>Vua của mọi nghề</li>
+                <li>Ông em năm 96 học bk cơ khí chuyển qua it...</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+
+
+</html>
