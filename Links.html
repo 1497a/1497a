@@ -4,11 +4,24 @@
 hover lướt qua thì màu gì
 active tương tác thì màu gì
 background-color: transparent; đổi màu nền
+.a là khai báo một classes: có thể sử dụng nhiều lần
+#a là khai báo một id: id chỉ sử dụng một lần trong web 
+Thẻ <base> dùng để xác định một "đường dẫn cơ sở" trong trang web, có nghĩa là sẽ không cần ghi toàn bộ đường link ra
+và có thể set target cho việc mở link ở file này 
+
 -->
 
 <head>
     <title>Vẫn là học html</title>
+    <base href="https://www.w3schools.com/" target="_blank">
     <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+        
         a:link {
             background-color: #eee6e5;
             color: red;
@@ -33,6 +46,7 @@ background-color: transparent; đổi màu nền
             text-decoration: underline;
         }
     </style>
+
 </head>
 
 <body>
@@ -51,7 +65,7 @@ background-color: transparent; đổi màu nền
     link text= Nhấp vô để học-->
     <!--Liên kết neo (Anchor Link)-->
     <a href="#b">click coi tới đâu</a>
-    <!--có thêm dấu # sẽ dẫn tới id ở dưới-->
+    <!--cách tạo một bookmark: thêm dấu # sẽ dẫn tới id ở dưới -->
     <p>LALSJSALDJSADS SD SLDSADSALD:S FSAFHSA LFS FSAHFsdjashdasdgas j;asdga;sjdasldjkasgdas lhag;sdasjasj
     </p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam mattis maximus. Phasellus facilisis felis massa, at bibendum lorem fringilla ut. Sed ipsum sapien, elementum id felis ut, iaculis pulvinar elit.</p>
@@ -95,7 +109,7 @@ background-color: transparent; đổi màu nền
         dolor. Etiam eu pulvinar odio, id rutrum tortor.</p>
     <p id="b">Tới đây này</p>
     <a href=" https://www.facebook.com/" target="_blank">vô</a>
-    <!--cái id này này-->
+    <!--cái id này này không cần thêm #-->
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 <!--
 Ordered List: <ol> </ol> thẻ con: <li> </li>
 Là kiểu hiển thị một danh sách mà các mục con của nó được sắp xếp theo thứ tự bằng số hoặc chữ cái.
-Unordered List: <ul> </ul> thẻ con: <li> </li>
+Unordered List: <ul> </ul> thẻ con: <li> </li> có thể set ký hiệu đánh dấu bằng  style=""list-style-type:;""
 Là kiểu hiển thị danh sách mà các mục con của nó sẽ không được sắp xếp theo thứ tự mà chỉ được đánh dấu bằng một ký tự đặc trưng.
 Description List: <dl> </dl> thẻ con: <dt> </dt> <dd> </dd>.
 Là kiểu hiển thị danh sách mà các mục con của nó sẽ không được đánh dấu thứ tự, nhưng sẽ có kèm theo một đoạn miêu tả.
+https://www.w3schools.com/html/html_lists_unordered.asp
 -->
 <!DOCTYPE html>
 <html>
@@ -17,8 +18,9 @@ Là kiểu hiển thị danh sách mà các mục con của nó sẽ không đư
 <body>
     <p>Đang làm gì nữa</p>
     <!--ordered list-->
-    <ol type="A">
-        <!--có thể thay thế giá trị của type= i,1,a,I-->
+    <ol start="50">
+        <!--set bắt đầu từ đầu-->
+        <!--type="A" có thể thay thế giá trị của type= i,1,a,I-->
         <li>Mục con 1</li>
         <li>Mục con 2</li>
         <li>Mục con 3</li>
@@ -26,8 +28,11 @@ Là kiểu hiển thị danh sách mà các mục con của nó sẽ không đư
         <li>Mục con 5</li>
     </ol>
     <!--unordered list-->
-    <ul>
+    <ul style="list-style-type: square;">
         <li>Đây là một danh sách không có thứ tự </li>
+        <ul>
+            <li>list trong list</li>
+        </ul>
         <li>Có nghĩa là nó không có đánh số như trên</li>
         <li>Chứ không phải là set như python</li>
     </ul>

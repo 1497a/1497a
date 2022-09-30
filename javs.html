@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- <meta http-equiv="refresh" content="20"> refresh trang sau mỗi 20s
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    sẽ thu nhỏ để phù hợp với các loại thiết bị khác nhau   
+    
+-->
+
+<head>
+    <meta http-equiv="refresh" content="20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <h1>My First JavaScript</h1>
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "yellow";
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <br>
+
+    <script>
+        function catchange(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "catimg.jpg"
+            } else {
+                pic = "catimg2.jpg"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="catimg.jpg" width="200" height="180">
+
+    <p>
+        <button type="button" onclick="catchange(1)">Con khác</button>
+        <button type="button" onclick="catchange(0)">Trả lại con cũ đi</button>
+    </p>
+
+</body>
+
+</html>

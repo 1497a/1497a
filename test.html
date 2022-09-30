@@ -29,8 +29,38 @@ span chỉ thay thế cho h,p,...
 <span style="font-size: 32px">Chữ có kích thước 32px</span> kích thước chữ
 <span style="font-family: Arial;">Font chữ Arial</span> font chữ
 <span style="text-align: center;">Canh giữa văn bản</span> căn lề 
-<
+<tr></tr> table row
+padding là khoảng cách giữa chữ trong bảng với cạnh bảng, padding -top ,bottom, left ,right 
+spacing là khoảng cách giữa các cạnh với nhau
+tạo bảng:
+<table>
+    <caption>Monthly savings</caption> tạo caption cho bảng
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+nth-child() sử dụng để đặt xác định vị trí  bảng cần thay đổi, vd nth-child(even) là các bảng chẵn 
+article là phần tử để bao bọc nội dung độc lập, nó có thể là một bài post của diễn đàn, 
+một bài viết của trang, một bài báo, một bình luận ... hoặc bất kỳ một nội dung độc lập nào.
+Thẻ <section> dùng để phân chia một cách logic một trang, một article. Vậy Thẻ <section> 
+dùng để chia nội dung trong một article. Ví dụ như trang chủ có thể có một <section> 
+chứa thông tin giới thiệu về công ty,<section> khác chứa mục tin tức, <section> khác chứa thông tin liên hệ ...
+<aside> được hiểu như nội dung thứ cấp của phần nội dung chính của trang. <aside> thường dùng để biểu diễn sidebar. 
+khi một <aside> sử dụng trong <article> thì nội dung trong <aside> liên quan đến <aside>
 -->
+
 <!DOCTYPE html>
 <html>
 
@@ -42,6 +72,7 @@ span chỉ thay thế cho h,p,...
     <meta name="description" content="Code ví dụ cho code" />
     <meta name="keyword" content="Phuoc,10d,khongsaoluu" />
     <!--charset có nhiệm vụ khai báo cho trình duyệt biết bảng mã ký tự siêu văn bản bên trong tài liệu là gì-->
+
     <style>
         body {
             background-color: white;
@@ -54,10 +85,14 @@ span chỉ thay thế cho h,p,...
         p {
             color: black;
             border: 2px solid palevioletred;
+            border-style: dotted;
+            border-radius: 10px;
+            border-color: darkblue;
             margin: 50px;
         }
     </style>
     <!-- border: 2px solid color; tạo viền xung quanh chữ
+        có thể để tạo bảng 
     margin: 50px; khoảng cách giữa các viền
     -->
     <!--Chúng ta có thể sử dụng file css để gộp chung các loại style mà ta đã tạo 
@@ -67,6 +102,9 @@ span chỉ thay thế cho h,p,...
 
 <body>
     <code>&lt;/p&gt;</code>
+    <!--
+        <div></div> phân nhóm các phần tử với nhau dạng đặc thù của style trên head?
+    -->
     <h1 style="text-align: center;">Tiêu Đề</h1>
     <p style="text-align: right;">Canh bên phải văn bản</p>
     <p1><mark>Đây sẽ là</mark> nơi mà mình test các viết của mình</p1>
@@ -82,6 +120,11 @@ span chỉ thay thế cho h,p,...
 
         ko vậy
     </pre>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
 </body>
 
 </html>

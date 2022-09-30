@@ -2,7 +2,8 @@
 title: Tiêu đề của hình ảnh.
 alt: Tên định danh của hình ảnh.
 width và height để điều chỉnh kích thước hiển thị hình ảnh. với style
-<img src=" " title=" " alt=" " style="width:42px;height:42px; > không có thẻ đóng
+<img src=" " title=" " alt=" " style="float:; width:42px;height:42px; > không có thẻ đóng
+float là xác định vị trí hình ảnh ở bên phải hay trái của chữ
 chèn video
 <video width="320" height="240" controls>
         <source src="url" type=" video/mp4">
@@ -12,21 +13,38 @@ chèn âm thanh
   <source src="url" type="audio/mp3">
 </audio>
 chèn thẳng một trang vào html
-<iframe src="https://www.w3schools.com/html/html_links.asp" width="500px" height="800px" scrolling="auto"></iframe>-->
+<iframe src="https://www.w3schools.com/html/html_links.asp" width="500px" height="800px" scrolling="auto"></iframe>
+ <link rel="icon" type="image/x-icon" href="C:\Users\phuoc\Downloads\catimg.jpg">
+set icon cho title của web-->
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Học html </title>
     <link rel="aaa" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            background-image: url('C:\\Users\\phuoc\\Downloads\\catimg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="
+    
+    
+    
+    ">
+
 </head>
 
 <body>
-    <iframe src="Linked.html" width="500px" height="800px" scrolling="auto"></iframe>
-    <video width="320" height="240" controls>
-        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-      </video>
-    <a href="test.html"><img src="smiley.gif" title="HÂHH" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+    <a href="test.html"><img src="C:\Users\phuoc\Downloads\catimg.jpg" title="HÂHH" alt="HTML tutorial" style="float:left ;width:42px;height:42px;"></a>
+    <iframe src="" name="la" style="border:none;" title="youtube"></iframe>
+    <p><a href="list.html" target="la">Nhấp vào đi</a></p>
 </body>
 
 </html>
+<!--
+  Image Map có chia khung hình để thao tác khác nhau ở mỗi chỗ (tự tìm)
+-->
